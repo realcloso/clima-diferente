@@ -1,4 +1,4 @@
-const { fetchWeatherData } = require('../services/weatherService');
+const { fetchWeatherData } = require('../services/weatherService.js');
 
 const compareCities = async (req, res) => {
     const { city1, city2, days = 5 } = req.query;

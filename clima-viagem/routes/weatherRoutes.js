@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { compareCities, getTravelSuggestions } = require('../controllers/weather');
+const { compareCities, getTravelSuggestions } = require('../controllers/weatherController.js');
 
 // Compara clima entre duas cidades
 router.get('/compare', compareCities);
