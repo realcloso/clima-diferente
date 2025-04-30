@@ -52,4 +52,4 @@ def buscar_clima_por_cidade(cidade):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=4000)

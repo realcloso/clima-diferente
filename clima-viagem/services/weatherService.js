@@ -12,9 +12,8 @@ const fetchWeatherData = async (city, days) => {
     }
 
     try {
-        // Chamando SUA API de clima local (ex: rodando em http://localhost:4000)
         const response = await axios.get(
-            `http://localhost:4000/api/weather?city=${city}&days=${days}`
+            `http://localhost:4000/clima?cidade=${city}`
         );
 
         const weatherData = {

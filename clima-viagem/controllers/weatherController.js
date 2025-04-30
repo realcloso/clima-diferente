@@ -21,7 +21,6 @@ const compareCities = async (req, res) => {
 
 const getTravelSuggestions = async (req, res) => {
     const { city, month } = req.query;
-    // Lógica para sugerir melhor época (pode usar histórico)
     res.json({ suggestion: `Melhor época para ${city}: ${month || 'Abril a Outubro'}` });
 };
 
